@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学习总结</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            2020年学习中自己没注意到的地方
+        </h1>
+    </header>
+    <main>
+        <section>
+            <h2>2020.2.21 周五</h2>
+            <article>
+                <h3>学习路线</h3>
+                <ul>
+                    <li>第一阶段：先学好web三剑客 使用Git</li>
+                    <li>基础篇：《精通css》、《css世界》、《js高级程序设计》、《你不知道的js》、《js语言精粹》</li>
+                    <li>网络篇：MDN、freeCodeCamp、Git</li>
+                    <li>使用cd进入文件夹</li>
+                </ul>
+            </article>
+            <article>
+                <h3>HTML</h3>
+                <ul>
+                    <li>单选按钮复选框中的name要一致 id不一致</li>
+                    li{新属性header、main、nav、section、article、footer}
+                </ul>
+            </article>
+            <article>
+                <h3>CSS</h3>
+                <ul>
+                    <li>border-radius:50%;可以将块变为圆形</li>
+                    <li>
+                        居中的方法
+                        <ol>
+                            <li>position:absolute;top、bottom、left、right设置为0;margin:auto</li>
+                            <li>position:absolute;top:50%;left:50%;margin:-50%的width、heigth</li>
+                        </ol>
+                    </li>
+                    <li>transform:scale()可以用来扩大或缩小元素的比例</li>
+                    <li>
+                        CSS实现动画效果animation
+                        <ol>
+                            <li>animation-name属性设置动画的名称 @keyframes用来设置动画各阶段的变化 也是animation的名称</li>
+                            <li>animation-duration属性用来设置动画花费的时间</li>
+                            <li>animation-iteration-count属性用来设置动画循环的次数（其中infinite为无限循环）</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <ol>
+                            <li>font属性中必须要有的为size和family且顺序就为这个</li>
+                        </ol>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h3>Node.js</h3>
+                <ul>
+                    <li>node进入命令交互模式 control+c退出node模式</li>
+                    <li>sudo代表超级权限</li>
+                    <li>node运行时可以访问到 关闭时则访问不到本地自创服务器</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Git和GitHub</h3>
+                <ul>
+                    <li>
+                        git和远程库之间的联系
+                        <ol>
+                            <li>将目录变为Git可以管理的仓库：git init</li>
+                            <li>在GitHub上插件一个new repo</li>
+                            <li>
+                                关联并完成第一次推送 关联方法有两种：
+                                <ul>
+                                    <li>https的方式:git remote add origin https://github.com/your-name/repository.git</li>
+                                    <li>ssh key方式:git remote add origin git@github.com:your-name/repository.git</li>
+                                    li{如何生成ssh：ssh-keygen -t rsa -C "自己邮箱" 3个回车 cat ~/.ssh/id_rsa.pub(可以查看ssh)
+                                    然后复制ssh粘贴到GitHub即可}
+                                    <li>push提示错误fetch 说明远程分支和本地有分歧 可以县合并 or 强制覆盖：git push origin master -f</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>终端快捷键：
+                        <ol>
+                            <li>进入文件夹cd 退出文件夹cd ..</li>
+                            <li>!:wq为退出vim文件</li>
+                        </ol>   
+                    </li>
+                    <li>vscode快捷键：
+                        <ol>
+                            <li>shift+option+f键缩进快捷键</li>
+                            <li>command+➡️到此行结尾 command+⬅️到此行开头 command+⬆️到文档开头 command+⬇️到文档结尾</li>
+                            <li>command+b侧边栏的缩放</li>
+                            <li>command+数字键开页面数</li>
+                        </ol>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
