@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/freecodecamp/surveyform.css">
+    <title>调查表格</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="title">调查问卷</h1>
+        <p id="description">一份基本的调查问卷</p>
+    </header>
+    <form action="" id="survery-form">
+        <div>
+            <label id="name-label" for="name">姓名</label>
+            <input class="input-control" type="text" id="name" placeholder="姓名">
+        </div>
+        <div><label for="email" id="email-label">邮箱</label>
+            <input class="input-control" type="email" name="email" id="email" placeholder="邮箱">
+        </div>
+        <div>
+            <label for="number" id="number-label">年龄</label>
+            <input class="input-control" type="number" id="number" min="0" max="99" placeholder="输入年龄">
+        </div>
+        <div>
+            <p>最喜欢的水果</p>
+            <select class="input-control" name="fruit" id="dropdown">
+                <option value="apple">苹果</option>
+                <option value="banana">香蕉</option>
+                <option value="watermelon">西瓜</option>
+            </select>
+        </div>
+        <div>
+            <label for="boy">男生
+                <input type="radio" name="gender" id="boy">
+            </label>
+            <label for="girl">女生
+                <input type="radio" name="gender" id="girl">
+            </label>
+        </div>
+        <div>
+            <p>你有哪些爱好</p>
+            <label for=""><input type="checkbox" name="like" value="read">读书</label>
+            <label for=""><input type="checkbox" name="like" value="sport">运动</label>
+            <label for=""><input type="checkbox" name="like" value="travel">旅游</label>
+            <label for=""><input type="checkbox" name="like" value="fish">钓鱼</label>
+            <label for=""><input type="checkbox" name="like" value="eat">吃</label>
+        </div>
+        <div>
+            <textarea name="message" cols="30" rows="10" placeholder="对我们有什么特别建议"></textarea>
+        </div>
+        <div>
+            <input class="input-control" type="submit" value="提交">
+        </div>
+    </form>
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+</body>
+
+</html>
