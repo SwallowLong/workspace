@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    font: 14px "Microsoft YaHei",serif;
+    background-color: #eee;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+
+body {
+    padding: 20px 0;
+    padding-right: 162px;
+    padding-left: 242px;
+    float: left;
+    border: 1px solid #999;
+}
+
+header, header p, main, main p, aside,aside ul, aside ul li{
+    background-color: #fff;
+}
+
+header, main, aside {
+    padding: 20px; 
+    border: 1px solid #999;
+    box-sizing: border-box;
+}
+
+header {
+    float: left;
+    width: 200px;
+    margin-left: -100%;
+    position: relative;
+    right: 222px;
+    
+}
+
+main {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+aside {
+    float: right;
+    width: 122px;
+    margin-right: -142px;
+}
+
+header img {
+    float: left;
+    margin-right: 20px;
+}
+
+header p {
+    float: left;
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside li {
+    margin-bottom: 20px;
+}
+
+aside li:last-child {
+    margin-bottom: 0;
+}
