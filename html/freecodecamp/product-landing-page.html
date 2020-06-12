@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/freecodecamp/product-landing-page.css">
+    <title>产品登录页</title>
+</head>
+<body>
+    <header id="header">
+        <img
+        id="header-img"
+        src="../../images/product-logo/logo.png"
+        alt="original trombones logo"
+      />
+        <nav id="nav-bar">
+            <ul>
+                <li class="nav-link"><a href="#introduce">关于我们</a></li>
+                <li class="nav-link"><a href="#product">产品</a></li>
+                <li class="nav-link"><a href="#form">登录/注册</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="product">
+        <video controls="controls">
+            <source src="../../video/rabbit320.mp4" type="video/mp4">
+            <source src="../../video/rabbit320.webm" type="video/webm">
+        </video>
+        </section>
+        <section id="introduce">
+            <div>
+                <h2>
+                    兔子
+                </h2>
+                <p>
+                    介绍兔子
+                </p>
+            </div>
+        </section>
+
+        <section id="form">
+        <form action="https://www.freecodecamp.com/email-submit
+        ">
+            <div>
+                <label for="name">姓名：</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="psw">密码：</label>
+                <input type="password" name="psw" id="psw">
+            </div>
+            <div>
+                <label for="email">邮箱：</label>
+                <input type="email" name="email" id="email" placeholder="输入邮箱">
+            </div>
+            <div>
+                <input type="submit" value="提交" id="submit">
+            </div>
+        </form> 
+        </section>
+
+    </main>
+</body>
+<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+</html>
