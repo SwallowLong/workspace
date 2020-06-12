@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+ body {
+    background-color: #45567d;
+ }
+#navbar {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-right: 40px;
+    background-color: rgba(226, 12, 12, 0.70);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding-right: 19px;
+}
+
+li {
+    padding: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li a:hover {
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #111;
+}
+
+h1 {
+    font-size: 42px;
+    color:#fff;
+}
+
+#welcom-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    height: 100vh;
+}
+
+#projects h1 {
+    padding-bottom: 4px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 40px;
+}
+
+#my-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    margin: 0 auto;   
+    padding: 0 20px;
+}
+
+.project-tile {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#my-projects a {
+    font-size: 24px;
+    display: block;
+    padding: 40px;
+    margin: 0 auto;
+    color: #fff;
+    text-decoration: none;
+}
+
+#profile-link {
+    margin-top: 40px;
+    background-color: #303841;
+    padding: 20px;
+}
+
+#profile-link a {
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+#profile-link a:hover {
+    cursor: pointer;
+}
+
