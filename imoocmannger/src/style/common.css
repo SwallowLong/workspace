@@ -1,0 +1,12 @@
+.nav-left {
+    min-width: 180px;
+    height: calc(100vh);
+}
+
+.main {
+    height: calc(100vh);
+}
+
+.content {
+
+}

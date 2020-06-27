@@ -1,6 +1,8 @@
 import React from 'react'
 import Child from './Child.js'
+import {Button} from 'antd'
 import './index.css'
+import 'antd/dist/antd.css'
 export default class Life extends React.Component {
     constructor(props) {
         super(props);
