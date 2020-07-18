@@ -1,12 +1,51 @@
 import React from 'react'
 import MenuConfig from './../../config/menuConfig'
 import { Menu } from 'antd'
-import { MailOutlined, AppstoreOutlined, SettingOutlined } from '@ant-design/icons';
 import './index.css'
+import { NavLink } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { switchMenu } from './../../redux/action'
 const { SubMenu } = Menu;
-export default class NavLeft extends React.Component {
 
-    
+class NavLeft extends React.Component {
+   
+    state = {
+        currentKey:''
+    }
+
+    handleClick = ({ item, key })=>{
+        const { dispatch } = this.props;
+        dispatch(switchMenu(item.props.title))
+        this.setState({
+            currentKey: item.key
+        })
+        console.log(this.state)
+    }
+
+    componentWillMount(){
+        const menuTreeNode = this.renderMenu(MenuConfig);
+        let currentKey = window.location.hash.replace(/#|\?.*$/g, '');
+        this.setState({
+            currentKey,
+            menuTreeNode
+        })
+    }
+
+    // 菜单渲染
+    renderMenu = (data) => {
+        return data.map((item) => {
+            if (item.children) {
+                return (
+                    <SubMenu title={item.title} key={item.key}>
+                        {this.renderMenu(item.children)}
+                    </SubMenu>
+                )
+            }
+            return <Menu.Item title={item.title} key={item.key}>
+                    <NavLink to={item.key}>{item.title}</NavLink>
+                </Menu.Item>
+        })
+    }
     render() {
         return (
             <div>
@@ -14,15 +53,14 @@ export default class NavLeft extends React.Component {
                     <img src="/assets/logo-ant.svg" alt="" />
                     <h1>Imooc MS</h1>
                 </div>
-                <Menu theme="dark">
-                <SubMenu key="sub1" icon={<MailOutlined />} title="Navigation One">
-                            <Menu.Item key="1">Option 1</Menu.Item>
-                            <Menu.Item key="2">Option 2</Menu.Item>
-                            <Menu.Item key="3">Option 3</Menu.Item>
-                            <Menu.Item key="4">Option 4</Menu.Item>
-                    </SubMenu>
+                <Menu 
+                onClick={this.handleClick}
+                selectedKeys={[this.state.currentKey]}
+                theme="dark">
+                    {this.state.menuTreeNode}
                 </Menu>
             </div>
         )
     }
 }
+export default connect()(NavLeft);

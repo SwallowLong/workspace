@@ -1,0 +1,73 @@
+.header {
+    background-color: #fff;
+}
+
+.header-top {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: right;
+}
+
+.header .header-top .logo{
+    line-height: 60px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.header .header-top .logo img{
+    height: 40px;
+    vertical-align: middle;
+}
+
+.header .header-top .logo span {
+    margin-left: 5px;
+}
+
+.header-top a {
+    padding-left: 40px;
+    color: #f9c700;
+}
+
+.breadcrumb {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    border-top: 1px solid #f9c700;
+}
+
+.breadcrumb-title {
+    text-align: center;
+    font-size: 18px;
+}
+
+.breadcrumb-title:after {
+    position: absolute;
+    content: '';
+    left: 85px;
+    top: 39px;
+    border-top: 9px solid #fff;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+}
+
+.weather {
+    text-align: right;
+}
+
+.date {
+    margin-right: 10px;
+}
+
+.simple-page .header {
+    width: 100%;
+}
+
+.simple-page .header-top {
+    background: #1890ff;
+    color: #fff;
+}
+
+.simple-page .ant-form, .simple-page .ant-col-12, .simple-page .weather {
+    display: none;
+}

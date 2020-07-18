@@ -1,12 +1,30 @@
+
+
 .nav-left {
-    min-width: 180px;
     height: calc(100vh);
+    background-color: #001529;
 }
 
 .main {
     height: calc(100vh);
+    background-color: #f1f3f5; 
+    overflow: auto;  
 }
 
 .content {
+    position: relative;
+    padding: 20px;
+}
 
+.content > div {
+    width: 100%;
+}
+
+.content-wrap {
+    background-color: #fff;
+    margin-top: -2px;
+}
+
+.operate-wrap button {
+    margin-right: 10px;
 }

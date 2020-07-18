@@ -70,10 +70,6 @@ const menuList = [
         ]
     },
     {
-        title: '富文本',
-        key: '/rich'
-    },
-    {
         title: '城市管理',
         key: '/city'
     },
@@ -83,11 +79,11 @@ const menuList = [
         btnList: [
             {
                 title: '订单详情',
-                key: 'detail'
+                key: '/admindetail'
             },
             {
                 title: '结束订单',
-                key: 'finish'
+                key: '/adimnfinish'
             }
         ]
     },
@@ -98,24 +94,6 @@ const menuList = [
     {
         title: '车辆地图',
         key: '/bikeMap'
-    },
-    {
-        title: '图标',
-        key: '/charts',
-        children: [
-            {
-                title: '柱形图',
-                key: '/charts/bar'
-            },
-            {
-                title: '饼图',
-                key: '/charts/pie'
-            },
-            {
-                title: '折线图',
-                key: '/charts/line'
-            },
-        ]
     },
     {
         title: '权限设置',
