@@ -27,8 +27,17 @@ export default class TodoList extends React.Component {
 		})
 	}
 
+
+	[{
+		a: 1,
+		b: {
+			c: 2
+		}
+	}, {}]
+
 	handleDelet = (index) => {
 		let list = this.state.list
+
 		list.splice(index, 1)
 
 		this.setState({
