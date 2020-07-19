@@ -2,6 +2,7 @@
   "name": "imoocmannger",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/SwallowLong/workspace/tree/master/imoocmannger",
   "dependencies": {
     "@ant-design/compatible": "^1.0.4",
     "@ant-design/icons": "^4.2.1",
